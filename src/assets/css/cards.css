@@ -1,0 +1,35 @@
+/* cards.css */
+.card {
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body {
+    padding: 25px;
+}
+.card-title {
+    font-family: 'Montserrat'; /* Здесь вы можете указать любой шрифт */
+    font-size: 20px; /* Размер шрифта для названия карточки */
+    color: #333; /* Цвет текста */
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.full-width-btn {
+    width: 100%;
+    max-width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    transition: background-color 0.2s;
+}
+
+.full-width-btn:hover {
+    background-color: #0056b3;
+    color: white;
+}
+

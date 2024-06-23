@@ -1,0 +1,36 @@
+.search-input {
+    max-width: 800px; /* Максимальная ширина */
+    margin-right: 25px;
+    width: 100%; /* Ширина равна 100% для начала */
+}
+
+@media (min-width: 769px) {
+    .search-input {
+        width: 750px; /* Фиксированная ширина при широких экранах */
+    }
+}
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .nav-links > * {
+    margin-left: 15px;
+  }
+  .basket-icon,
+  .search-icon,
+  .login-icon {
+    cursor: pointer; /* Устанавливаем курсор в виде указателя при наведении */
+      width: 50px; /* Ширина иконок */
+      height: 50px; /* Высота иконок */
+      transition: transform 0.3s ease; /* Анимация увеличения */
+  }
+  .basket-icon:hover,
+  .search-icon:hover,
+  .login-icon:hover {
+      transform: scale(1.1); /* Увеличение на 10% при наведении */
+  }
+  .close-button {
+    display: block;
+    margin: 0 auto;
+}
